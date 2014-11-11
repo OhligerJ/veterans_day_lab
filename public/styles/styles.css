@@ -1,0 +1,141 @@
+html, body { height: 100%; margin: 0; padding: 0;}
+
+body {
+	background-color: black;
+}
+
+header {
+	width: 100%;
+	height:135px;
+	background-color: #330000;
+	color: white;
+	font-size: 48px;
+	line-height: 120%;
+	text-align: center;
+}
+
+header a {
+	color: white;
+	text-decoration: none;
+}
+
+header div {
+	float:right;
+	padding-right: 30px;
+	font-size: 18px;
+}
+
+header div ul {
+	float:left;
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+header div li {
+	margin: 10px;
+	float:left;
+}
+
+header .title {
+	margin-top:10px;
+	padding-top: 15px;
+	font-size: 48px;
+}
+
+div#content {
+	margin: 15px auto;
+	padding: 5px;
+}
+
+div#options {
+	width:500px;
+	margin: 0px auto;
+	padding: 5px;
+	color:gray;
+}
+
+.item {
+	margin:2px;
+}
+#container {
+    width: 900px;
+    margin: 0 auto;
+    min-height:600px;
+}
+
+/*Media Queries*/
+@media only screen and (max-width : 1199px),
+only screen and (max-device-width : 1199px){
+    #container {
+        width: 1000px;
+    }
+}
+ 
+ 
+@media only screen and (max-width : 999px),
+only screen and (max-device-width : 999px){
+    #container {
+        width: 800px;
+    }
+}
+ 
+@media only screen and (max-width : 799px),
+only screen and (max-device-width : 799px){
+    #container {
+        width: 600px;
+    }
+}
+ 
+@media only screen and (max-width : 599px),
+only screen and (max-device-width : 599px){
+    #container {
+        width: 400px;
+    }
+}
+ 
+@media only screen and (max-width : 399px),
+only screen and (max-device-width : 399px){
+    #container {
+        width: 200px;
+    }
+}
+/* masonry */
+.masonry {
+  background: #EEE;
+  max-width: 640px;
+}
+
+/* clearfix */
+.masonry:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.masonry .item {
+  width:  60px;
+  height: 60px;
+  float: left;
+  background: #D26;
+  border: 2px solid #333;
+  border-color: hsla(0, 0%, 0%, 0.5);
+  border-radius: 5px;
+}
+
+button {
+	z-index:1000;
+}
+
+h3 {
+	margin: 20px 0 0 0;
+	padding: 0;
+}
+footer {
+	text-align:center;
+	background-color: #330000;
+	height:60px;
+	color:white;
+	font-size: 16px;
+	padding: 20px;
+}

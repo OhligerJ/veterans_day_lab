@@ -1,0 +1,23 @@
+{
+  "name": "veterans_day_lab",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Jon1213/veterans_day_lab.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jon1213/veterans_day_lab/issues"
+  },
+  "homepage": "https://github.com/Jon1213/veterans_day_lab",
+  "dependencies": {
+    "ejs": "^1.0.0",
+    "express": "^4.10.2"
+  }
+}

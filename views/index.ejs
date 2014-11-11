@@ -1,0 +1,57 @@
+<% include partials/header %>
+
+<body ng-controller="AppCtrl" ng-app="galleryApp">
+	<header>
+		hello there, {{username | uppercase}}	
+	</header>
+	
+	<div id="content">
+		<div id="options">
+			<select ng-model="selection" ng-options="item for item in galleries">
+			  </select>
+			  <tt>selection={{selection}}</tt>
+
+			<button onClick="angular.element(document.getElementById('container')).scope().add(document.getElementById('img_src').value)">Add Picture</button>
+
+			<input type="text" name="img_src" id="img_src" value= "/images/" placeholder="filename here">
+		</div>
+		<div id="container" ng-switch on="selection">
+
+			<div ng-switch-when="gallery" ng-model="gallery.src">
+			 	<div ng-repeat="pic in gallery" class="item">
+					<img src="{{pic.src}}" alt="">
+				</div>
+			</div>	
+			<div ng-switch-when="sunsets" ng-model="gallery.src" >
+				<div ng-repeat="pic in sunsets" class="item">
+					<img src="{{pic.src}}" alt="">
+				</div>
+			</div>	
+
+	  	</div>
+	</div>
+
+	<!-- <div ng-controller="ExampleController">
+  <select ng-model="selection" ng-options="item for item in items">
+  </select>
+  <tt>selection={{selection}}</tt>
+  <hr/>
+  <div class="animate-switch-container"
+    ng-switch on="selection">
+
+      <div class="animate-switch" ng-switch-when="settings">Settings Div</div>
+      <div class="animate-switch" ng-switch-when="home">Home Span</div>
+      <div class="animate-switch" ng-switch-default>default</div>
+  </div>
+</div> -->
+
+
+		
+	<script>
+
+		console.log(gallery)
+		// gallery is not defined here. interesting
+		
+	</script>
+	
+<% include partials/footer %>
